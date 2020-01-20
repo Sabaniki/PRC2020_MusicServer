@@ -13,8 +13,6 @@ fun main() {
 			println(it)
 			println(it.length)
 			when (it) {
-//				"squeal\n" -> MusicPlayer("kamo.wav").start(false)
-//				"bomb!\n" -> MusicPlayer("bomb.wav").start(false)
 				"startB\n" -> bgm.start(true)
 				"stopB\n" -> bgm.stop()
 			}
