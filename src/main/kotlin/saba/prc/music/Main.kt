@@ -10,13 +10,18 @@ fun main() {
 	while (received != udpFromRasp.finishing) {
 		received = udpFromRasp.receive(portFromRasp).text
 		received.let {
-			println(it)
-			println(it.length)
+			print(it)
+			print(it.length)
+//			if(it.contains("wh")){
+//				println("キテマス")
+//				MusicPlayer("whistle.mp3").start(false)
+//			}
 			when (it) {
 //				"squeal\n" -> MusicPlayer("kamo.wav").start(false)
-//				"bomb!\n" -> MusicPlayer("bomb.wav").start(false)
-				"startB\n" -> bgm.start(true)
-				"stopB\n" -> bgm.stop()
+				"wh\n" -> MusicPlayer("whistle.wav").start(false)
+				"st\n" -> MusicPlayer("PRC発車メロディー.wav").start(false)
+//				"startB\n" -> bgm.start(true)
+//				"stopB\n" -> bgm.stop()
 			}
 		}
 	}
