@@ -19,7 +19,7 @@ fun main() {
 			when (it) {
 //				"squeal\n" -> MusicPlayer("kamo.wav").start(false)
 				"wh\n" -> MusicPlayer("whistle.wav").start(false)
-				"st\n" -> MusicPlayer("PRC発車メロディー.wav").start(false)
+				"st\n" -> MusicPlayer("PRC_melo.wav").start(false)
 //				"startB\n" -> bgm.start(true)
 //				"stopB\n" -> bgm.stop()
 			}
